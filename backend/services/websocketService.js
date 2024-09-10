@@ -40,7 +40,7 @@ const trackDeposit = () => {
             if (ws && ws.readyState === WebSocket.OPEN) {
                 ws.send(JSON.stringify(depositData));
             }
-            // sendTelegramMessage(depositData);
+            sendTelegramMessage(depositData);
 
         } catch (err) {
             console.error('Error processing log:', err);
