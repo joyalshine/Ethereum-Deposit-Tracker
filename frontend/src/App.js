@@ -13,7 +13,7 @@ function App() {
     if (view === 'realtime') {
       setHistoricalData([]);
 
-      const ws = new WebSocket('ws://localhost:5000');
+      const ws = new WebSocket('ws://ethereum-deposit-tracker.onrender.com:5000');
 
       ws.onopen = () => {
         console.log('Connected to WebSocket');
@@ -35,7 +35,7 @@ function App() {
       setDeposits([]);
       setLoading(true);
 
-      fetch('http://localhost:5000/historical')
+      fetch('https://ethereum-deposit-tracker.onrender.com/historical')
         .then((response) => response.json())
         .then((data) => {
           setHistoricalData(data);
