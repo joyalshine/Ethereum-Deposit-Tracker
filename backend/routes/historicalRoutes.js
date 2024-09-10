@@ -15,7 +15,7 @@ router.get('/historical', async (req, res) => {
         const latestBlock = await provider.getBlockNumber();
         const filter = {
             address: BEACON_CONTRACT_ADDRESS,
-            fromBlock: latestBlock - 100,
+            fromBlock: latestBlock - 200,
             toBlock: 'latest',
         };
 
