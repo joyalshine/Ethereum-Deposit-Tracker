@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4; /* Light background for overall page */
+  color: #333; /* Dark text for readability */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #4CAF50; /* Green header background */
+  color: white; /* White text for contrast */
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.tabs {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs button {
+  background-color: #fff; /* White background for tabs */
+  border: 2px solid #4CAF50; /* Green border for tabs */
+  border-radius: 5px;
+  color: #4CAF50; /* Green text */
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: bold;
+}
+
+.tabs button.active {
+  background-color: #4CAF50; /* Green background for active tab */
+  color: white; /* White text */
+  border-color: #4CAF50;
+}
+
+.tabs button:hover {
+  background-color: #e0e0e0; /* Light gray on hover */
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.legend {
+  margin-bottom: 10px;
+  color: #333; /* Dark text for contrast */
+}
+
+.legend p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.legend span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.normal-transaction-legend {
+  background-color: #4CAF50; /* Green for normal transactions */
+}
+
+.internal-transaction-legend {
+  background-color: #f39c12; /* Orange for internal transactions */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #fff; /* White background for table */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: center;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+table th {
+  background-color: #4CAF50; /* Green header cells */
+  color: white; /* White text for contrast */
+}
+
+
+
+table tr:hover {
+  background-color: #f1f1f1; /* Slightly darker gray on hover */
+}
+
+table td {
+  border-bottom: 1px solid #ddd; /* Light gray border for table cells */
+}
+
+.normal-transaction {
+  background-color: #e8f5e9; /* Light green for normal transactions */
+}
+
+.internal-transaction {
+  background-color: #fff3e0; /* Light orange for internal transactions */
+}
+
+.loading {
+  text-align: center;
+}
+
+.no-data {
+  text-align: center;
+  color: #888; /* Gray text for no data */
+}
+
+.spinner {
+  border: 4px solid #f3f3f3; /* Light gray background */
+  border-radius: 50%;
+  border-top: 4px solid #3498db; /* Blue spinner */
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
